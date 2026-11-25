@@ -75,6 +75,26 @@ html.lenis body {
   transform: translateY(14px);
 }
 
+/* Preloader orbit ring: 14 cursors slowly circling the logo */
+.swarm-orbit {
+  animation: swarm-orbit 9s linear infinite;
+}
+
+@keyframes swarm-orbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .swarm-orbit {
+    animation: none;
+  }
+}
+
 /* Typewriter blinking cursor */
 .type-cursor {
   animation: type-blink 0.85s step-end infinite;

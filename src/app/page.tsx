@@ -144,6 +144,9 @@ export default function Home() {
                   Get in touch
                 </a>
               </div>
+              <p className="mt-5 font-mono text-[11px] text-dim">
+                Scroll to build · Stop and the swarm comes to your cursor · Esc skips
+              </p>
               <div data-swarm-layer className="mt-8 flex flex-wrap gap-6">
                 {STATS.map((s) => (
                   <div key={s.label}>
