@@ -74,6 +74,27 @@ html.lenis body {
   opacity: 0 !important;
   transform: translateY(14px);
 }
+
+/* Typewriter blinking cursor */
+.type-cursor {
+  animation: type-blink 0.85s step-end infinite;
+}
+
+@keyframes type-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .type-cursor {
+    animation: none;
+  }
+}
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
 }

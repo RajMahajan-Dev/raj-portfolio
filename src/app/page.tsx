@@ -1,5 +1,6 @@
 import Image from "next/image";
 import AgentSwarm from "@/components/AgentSwarm";
+import Typewriter from "@/components/Typewriter";
 import SmoothScroll from "@/components/SmoothScroll";
 import ThemeToggle from "@/components/ThemeToggle";
 import ProjectsSection from "@/components/ProjectsSection";
@@ -119,7 +120,7 @@ export default function Home() {
               </p>
               <h1 data-swarm-layer className="mt-4 font-display text-5xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
                 Raj Mahajan
-                <span className="mt-2 block text-3xl text-accent sm:text-4xl">AI &amp; Robotics</span>
+                <Typewriter />
               </h1>
               <p data-swarm-layer className="mt-5 max-w-xl text-base leading-relaxed text-muted">
                 I build intelligent systems where machine learning meets real-world robotics: edge AI,
