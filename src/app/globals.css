@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --background: #06080e;
+  --surface: #0a0d16;
+  --card: #0f1420;
+  --card2: #121828;
+  --border: #1a2438;
+  --accent: #c9a227;
+  --accent2: #e8820a;
+  --text: #dde4f0;
+  --muted: #8a9ab0;
+  --dim: #55647a;
+}
+
+[data-theme="light"] {
+  --background: #f5f3ef;
+  --surface: #ede9e1;
+  --card: #ffffff;
+  --card2: #f8f6f2;
+  --border: #d8d0c0;
+  --accent: #a87f0a;
+  --accent2: #c9620a;
+  --text: #1a1e2a;
+  --muted: #5a6475;
+  --dim: #9aa0ab;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-card: var(--card);
+  --color-card2: var(--card2);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent2: var(--accent2);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-dim: var(--dim);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  --font-display: var(--font-display);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  transition: background 0.4s, color 0.4s;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--background);
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
