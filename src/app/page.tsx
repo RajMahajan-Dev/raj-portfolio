@@ -85,7 +85,7 @@ export default function Home() {
       <SmoothScroll />
       <AgentSwarm />
 
-      <header className="sticky top-0 z-40 -mx-5 border-b border-border bg-background/90 px-5 py-3 backdrop-blur sm:-mx-8 sm:px-8">
+      <header data-swarm-layer className="sticky top-0 z-40 -mx-5 border-b border-border bg-background/90 px-5 py-3 backdrop-blur sm:-mx-8 sm:px-8">
         <div className="mx-auto flex max-w-5xl items-center justify-between gap-3">
           <a href="#top" className="font-display text-lg font-extrabold tracking-tight text-accent">
             Raj<span className="text-text">.</span>
@@ -111,24 +111,24 @@ export default function Home() {
       </header>
 
       <main>
-        <section id="top" data-build className="scroll-mt-24 py-14 sm:py-20">
+        <section id="top" className="scroll-mt-24 py-14 sm:py-20">
           <div className="grid items-center gap-10 md:grid-cols-[1fr_300px]">
             <div>
-              <p className="font-mono text-xs uppercase tracking-[0.25em] text-accent">
+              <p data-swarm-layer className="font-mono text-xs uppercase tracking-[0.25em] text-accent">
                 Open to research and R&amp;D opportunities
               </p>
-              <h1 className="mt-4 font-display text-5xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
+              <h1 data-swarm-layer className="mt-4 font-display text-5xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
                 Raj Mahajan
                 <span className="mt-2 block text-3xl text-accent sm:text-4xl">AI &amp; Robotics</span>
               </h1>
-              <p className="mt-5 max-w-xl text-base leading-relaxed text-muted">
+              <p data-swarm-layer className="mt-5 max-w-xl text-base leading-relaxed text-muted">
                 I build intelligent systems where machine learning meets real-world robotics: edge AI,
                 computer vision, and robots that work outside the lab.
               </p>
-              <p className="mt-5 max-w-xl border-l-2 border-accent pl-4 text-base font-medium leading-relaxed">
+              <p data-swarm-layer className="mt-5 max-w-xl border-l-2 border-accent pl-4 text-base font-medium leading-relaxed">
                 {OPPORTUNITY_LINE}
               </p>
-              <div className="mt-7 flex flex-wrap gap-3">
+              <div data-swarm-layer className="mt-7 flex flex-wrap gap-3">
                 <a
                   href={CONTACT.cv}
                   download
@@ -143,7 +143,7 @@ export default function Home() {
                   Get in touch
                 </a>
               </div>
-              <div className="mt-8 flex flex-wrap gap-6">
+              <div data-swarm-layer className="mt-8 flex flex-wrap gap-6">
                 {STATS.map((s) => (
                   <div key={s.label}>
                     <p className="font-display text-2xl font-bold text-accent">{s.value}</p>
@@ -152,7 +152,7 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <div className="mx-auto w-full max-w-[300px]">
+            <div data-swarm-layer className="mx-auto w-full max-w-[300px]">
               <div className="overflow-hidden rounded-2xl border border-border shadow-xl">
                 <Image
                   src="/headshot.jpg"
@@ -170,7 +170,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" data-build className="scroll-mt-24 border-t border-border py-14">
+        <section id="about" data-swarm-layer className="scroll-mt-24 border-t border-border py-14">
           <SectionHeading kicker="About" title="Researcher who ships robots" />
           <Reveal>
             <p className="mt-6 max-w-3xl leading-relaxed text-muted">
@@ -189,7 +189,7 @@ export default function Home() {
           </Reveal>
         </section>
 
-        <section id="education" data-build className="scroll-mt-24 border-t border-border py-14">
+        <section id="education" data-swarm-layer className="scroll-mt-24 border-t border-border py-14">
           <SectionHeading kicker="Education" title="Academic foundation" />
           <div className="mt-8 space-y-5">
             <Reveal>
@@ -225,7 +225,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="experience" data-build className="scroll-mt-24 border-t border-border py-14">
+        <section id="experience" data-swarm-layer className="scroll-mt-24 border-t border-border py-14">
           <SectionHeading kicker="Experience" title="Research internships" />
           <div className="mt-8 space-y-5">
             {EXPERIENCE.map((e, i) => (
@@ -248,12 +248,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projects" data-build className="scroll-mt-24 border-t border-border py-14">
+        <section id="projects" data-swarm-layer className="scroll-mt-24 border-t border-border py-14">
           <SectionHeading kicker="Projects" title="Things I have built" />
           <ProjectsSection />
         </section>
 
-        <section id="skills" data-build className="scroll-mt-24 border-t border-border py-14">
+        <section id="skills" data-swarm-layer className="scroll-mt-24 border-t border-border py-14">
           <SectionHeading kicker="Skills" title="What I know" />
           <div className="mt-8 grid gap-5 md:grid-cols-2">
             {SKILL_GROUPS.map((g, i) => (
@@ -274,7 +274,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="publications" data-build className="scroll-mt-24 border-t border-border py-14">
+        <section id="publications" data-swarm-layer className="scroll-mt-24 border-t border-border py-14">
           <SectionHeading kicker="Publications" title="Research &amp; patents" />
           <div className="mt-8 space-y-4">
             {PUBLICATIONS.map((p) => (
@@ -294,12 +294,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="certifications" data-build className="scroll-mt-24 border-t border-border py-14">
+        <section id="certifications" data-swarm-layer className="scroll-mt-24 border-t border-border py-14">
           <SectionHeading kicker="Certifications" title="Continuous learning" />
-          <p className="mt-4 text-sm text-muted">
-            New certificates are added here with their name, issuer, and date. To add one, send the
-            certificate image with those details.
-          </p>
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {certs.map((c) => (
               <Reveal key={c.name}>
@@ -329,7 +325,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="leadership" data-build className="scroll-mt-24 border-t border-border py-14">
+        <section id="leadership" data-swarm-layer className="scroll-mt-24 border-t border-border py-14">
           <SectionHeading kicker="Leadership" title="Leadership &amp; community" />
           <div className="mt-8 grid gap-5 md:grid-cols-3">
             {LEADERSHIP.map((l) => (
@@ -344,7 +340,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="achievements" data-build className="scroll-mt-24 border-t border-border py-14">
+        <section id="achievements" data-swarm-layer className="scroll-mt-24 border-t border-border py-14">
           <SectionHeading kicker="Achievements" title="Recognition &amp; awards" />
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {ACHIEVEMENTS.map((a) => (
@@ -358,7 +354,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="gallery" data-build className="scroll-mt-24 border-t border-border py-14">
+        <section id="gallery" data-swarm-layer className="scroll-mt-24 border-t border-border py-14">
           <SectionHeading kicker="Gallery" title="Moments &amp; memories" />
           <div className="mt-8 grid gap-5 sm:grid-cols-2">
             {GALLERY.map((g) => (
@@ -381,7 +377,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" data-build className="scroll-mt-24 border-t border-border py-14">
+        <section id="contact" data-swarm-layer className="scroll-mt-24 border-t border-border py-14">
           <SectionHeading kicker="Contact" title="Let's build something" />
           <Reveal>
             <p className="mt-6 max-w-2xl leading-relaxed text-muted">{OPPORTUNITY_LINE}</p>

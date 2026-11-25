@@ -24,6 +24,7 @@ export type Project = {
   github?: string;
   liveApp?: string;
   showcased?: string[];
+  video?: string;
 };
 
 export const TOP_PROJECTS: Project[] = [
@@ -42,6 +43,7 @@ export const TOP_PROJECTS: Project[] = [
     desc: "AI-based rehabilitation assistant that generates personalized exercise plans through LLM analysis of injury type, mobility level, and recovery goals.",
     keyImpl:
       "LLM-powered recommendation engine that dynamically adapts rehabilitation plans from user-specific health inputs in real time.",
+    video: "https://raw.githubusercontent.com/RajMahajan-Dev/Image/main/Rehabot-AI%20Video.mp4",
     skills: ["Python", "LLM APIs", "NLP", "Agentic AI", "Flask", "Workflow Automation", "Data Processing"],
     github: "https://github.com/RajMahajan-Dev/RehaBot-AI",
   },
@@ -60,6 +62,7 @@ export const TOP_PROJECTS: Project[] = [
     desc: "Vision-assisted palletizing simulation using TM-900 CoBot with integrated visual feedback for industrial pick-and-place automation, reducing cycle time by 18%.",
     keyImpl:
       "Visual feedback integrated into RoboDK + MATLAB motion planning pipeline, cutting cycle time by 18% through vision-guided control.",
+    video: "https://cdn.jsdelivr.net/gh/RajMahajan-Dev/Image@main/bot.mp4",
     skills: ["RoboDK", "MATLAB", "TM-900 CoBot", "Vision Systems", "Motion Planning", "Industrial Automation"],
   },
   {
@@ -68,6 +71,7 @@ export const TOP_PROJECTS: Project[] = [
     desc: "ML-powered computer vision system for real-time fruit ripeness detection — reduced manual inspection by 85% and boosted agricultural productivity by 12%.",
     keyImpl:
       "YOLO detection model trained on Roboflow, deployed on microcontroller for real-time on-device fruit ripeness classification.",
+    video: "https://cdn.jsdelivr.net/gh/RajMahajan-Dev/Image@main/Ripe.mp4",
     skills: ["Python", "YOLO", "Computer Vision", "TensorFlow", "Roboflow", "CNN", "Image Preprocessing", "ML Deployment"],
   },
   {
@@ -76,6 +80,7 @@ export const TOP_PROJECTS: Project[] = [
     desc: "End-to-end 3D prototyping of a retractable bike landing gear mechanism — from concept to physical Phase 1 prototype.",
     keyImpl:
       "Full mechanical assembly and electronic flow design for landing gear actuation; printed with Bambu Lab P1S with AMS multi-material for functional parts.",
+    video: "https://cdn.jsdelivr.net/gh/RajMahajan-Dev/Image@main/VID-20260222-WA0007%282%29%20%281%29.mp4",
     skills: ["Bambu Lab P1S", "AMS Multi-material", "FDM Printing", "CAD", "Mechanical Design", "Electronic Flow", "Tolerancing"],
   },
 ];
@@ -97,6 +102,7 @@ export const MORE_PROJECTS: Project[] = [
     desc: "Full-stack household services platform enabling users to discover, book, and manage services like cleaning, tutoring, and childcare.",
     keyImpl:
       "Scalable Flask-based backend with REST APIs, role-based authentication, and SQLAlchemy ORM, combined with a responsive Bootstrap UI.",
+    video: "https://cdn.jsdelivr.net/gh/RajMahajan-Dev/Image@main/HomeZen%20%281%29.mp4",
     skills: ["Flask", "SQLAlchemy", "SQLite", "HTML5", "Bootstrap 5", "REST APIs", "Authentication"],
   },
   {
@@ -104,6 +110,7 @@ export const MORE_PROJECTS: Project[] = [
     period: "2025",
     desc: "E-commerce web application for religious and spiritual products, designed with a clean and intuitive shopping experience.",
     keyImpl: "Full-stack web app with product catalog, cart management, and smooth UX deployed on Lovable.",
+    video: "https://cdn.jsdelivr.net/gh/RajMahajan-Dev/Image@main/Ganpati%20%281%29.mp4",
     skills: ["React", "JavaScript", "UI/UX", "E-Commerce", "Web Development"],
     liveApp: "https://ganpati-grove.lovable.app/",
   },
@@ -113,6 +120,7 @@ export const MORE_PROJECTS: Project[] = [
     desc: "AI-driven platform connecting sponsors with influencers — streamlines discovery, matching, and campaign management.",
     keyImpl:
       "AI-powered matching engine pairing sponsors and influencers based on niche, audience, and campaign goals using data-driven scoring.",
+    video: "https://cdn.jsdelivr.net/gh/RajMahajan-Dev/Image@main/SI%20%281%29.mp4",
     skills: ["Python", "Flask", "AI/ML", "Data Processing", "REST APIs", "MongoDB"],
     github: "https://github.com/RajMahajan-Dev/Sponsor-Influencer-Project",
   },
@@ -121,6 +129,7 @@ export const MORE_PROJECTS: Project[] = [
     period: "2025",
     desc: "Official website for the Janatics Automation and Robotics Club — showcasing events, members, projects, and club activities.",
     keyImpl: "Responsive club website with modern web stack deployed on Vercel with dynamic content sections.",
+    video: "https://cdn.jsdelivr.net/gh/RajMahajan-Dev/Image@main/JARC%20Video%20%281%29.mp4",
     skills: ["React", "JavaScript", "Web Development", "UI/UX", "Vercel"],
     liveApp: "https://jarc.vercel.app/",
   },

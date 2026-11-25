@@ -13,6 +13,16 @@ function ProjectCard({ p }: { p: Project }) {
         <span className="shrink-0 font-mono text-[11px] text-dim">{p.period}</span>
       </div>
       {p.funded && <p className="mt-1 font-mono text-[11px] text-accent">{p.funded}</p>}
+      {p.video && (
+        // eslint-disable-next-line jsx-a11y/media-has-caption
+        <video
+          src={p.video}
+          controls
+          preload="none"
+          playsInline
+          className="mt-4 aspect-video w-full rounded-xl bg-black object-cover"
+        />
+      )}
       <p className="mt-3 text-sm leading-relaxed text-muted">{p.desc}</p>
       <p className="mt-3 text-sm leading-relaxed">{p.keyImpl}</p>
       <div className="mt-4 flex flex-wrap gap-1.5">

@@ -62,6 +62,18 @@ html.lenis,
 html.lenis body {
   height: auto;
 }
+
+/* Agent Cursor Swarm: layers start hidden and are revealed by the agents
+   as they build them. Applied by JS only, so the page is fully visible
+   without JS, on touch devices, and with reduced motion. */
+.swarm-layer {
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+.swarm-hidden {
+  opacity: 0 !important;
+  transform: translateY(14px);
+}
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
 }
