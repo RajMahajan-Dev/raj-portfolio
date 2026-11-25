@@ -24,7 +24,7 @@ function TypedTitle({ title }: { title: string }) {
         i++;
         setText(title.slice(0, i));
         if (i >= title.length) window.clearInterval(id);
-      }, 42);
+      }, 65);
       return () => window.clearInterval(id);
     };
     let cleanup: (() => void) | undefined;
